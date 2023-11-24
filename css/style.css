@@ -25,7 +25,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
   position: fixed;
 }
 
@@ -78,8 +77,8 @@ body {
 }
 
 #section-b {
-  width: 85vw;
-  top: 30vh;
+  width: 85%;
+  top: 30%;
   left: 15vw;
   position: relative;
   z-index: -1;
@@ -107,7 +106,7 @@ body {
   font-size: 48px;
 }
 
-.photography-grid{
+#section-b .photography-grid{
 
   --gap: 16px;
   --num-col: 2;
@@ -118,13 +117,12 @@ body {
 
   display: grid;
   grid-template-columns: repeat(var(--num-col), 1fr);
-  grid-auto-rows: var(--row-height);
   gap: var(--gap);
 
 }
 
 .photography-grid img {
-  width: 50%;
+  max-width: 100%;
   height: auto;
 }
 
